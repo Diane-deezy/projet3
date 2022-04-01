@@ -1,0 +1,22 @@
+/* CSS Document */
+
+body {
+    background-color: white;
+    max-width: 777px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    width: 50%;
+}
