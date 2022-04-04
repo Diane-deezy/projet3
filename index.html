@@ -14,8 +14,10 @@
     <link rel="canonical" href="#">
     <title>Ohmyfood - Accueil</title>
 </head>
-<body>
+<body onload="myFunction()">
     <!-- Nav Logo -->
+    <div id="loader"></div>
+    <div id="myDiv" class="animate-bottom">
         <header>
             <div class="logo">
                 <figure>
@@ -126,4 +128,17 @@
                 <li class="list"><a href="#">Contact</a></li>
             </ul>
         </footer>
+    </div>
+    <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
 </body>
