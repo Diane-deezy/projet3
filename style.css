@@ -99,4 +99,185 @@ h2 {
     font-family: "Robotomedium", "sans-serif";
     font-size: 16px;
     cursor: pointer;
+    box-shadow: #d7d7d7 0px 4px 5px 3px ;
+}
+
+.explore button:active {
+    background: linear-gradient(to bottom, #f8abe2 0,8%, #ac8bd5 80%);
+    box-shadow: #a5a5a5 0px 4px 5px 3px ;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fonctionnement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.fonctionnement h1 {
+    text-align: left;
+    width: 90%;
+    margin: 45px 0 30px 0;
+}
+
+.fonctionnement button {
+    width: 90%;
+    max-width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4% 0;
+    height: 70px;
+    background-color: #eeeeee;
+    border-style: none;
+    border-radius: 17px;
+    color: black;
+    font-family: "Robotomedium", "sans-serif";
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: #d7d7d7 0px 3px 10px 3px ;
+}
+
+.fonctionnement button .content {
+    width: 80%;
+    text-align: left;
+}
+
+.fonctionnement button .fa-solid {
+    font-size: 21px;
+    width: 10%;
+    color: grey;
+    margin-right: 20px;
+}
+
+.number {
+    color: #eeeeee;
+    background-color: #9356DC;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    line-height: 1.65;
+    font-size: 15px;
+    margin-left: -35px;
+    margin-right: 40px;
+}
+
+.fonctionnement button:active {
+    background-color: #efe8fa;
+}
+
+.fonctionnement button:active .fa-solid {
+    color: #9356DC;
+}
+
+.restaurants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: #eeeeee;
+}
+
+.restaurants h1 {
+    text-align: left;
+    width: 90%;
+}
+
+.restaurants .element {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    background-color: white;
+    width: 90%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+}
+
+.restaurants .element .image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 190px;
+}
+
+.restaurants .element .image img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0% 95%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.restaurants .element .image .charonne {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0% 62%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.element p {
+    font-family: "Robotomedium","sans-serif";
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.element span {
+    font-family: "Robotolight", "sans-serif";
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+.element .fa-regular {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -20px;
+}
+
+.element .fa-solid {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: transparent;
+}
+
+.element .heart {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.bottom {
+    display: flex;
+}
+
+.text {
+    width: 50%;
+}
+
+.element .fa-regular:active {
+    color: transparent;
+}
+
+.element .fa-solid:active {
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
