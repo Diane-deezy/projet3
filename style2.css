@@ -1,0 +1,120 @@
+/* CSS Document */
+
+@font-face {
+    font-family: "Robotobold";
+    src: url("Roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Robotomedium";
+    src: url("Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Robotothin";
+    src: url("Roboto/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Robotolight";
+    src: url("Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+
+body {
+    background-color: white;
+    max-width: 777px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    width: 50%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-family: "Robotomedium", "sans-serif";
+    padding-left: 15px;
+}
+
+.image {
+    z-index: 0;
+}
+
+.image img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0% 95%;
+}
+
+.menu {
+    display: flex;
+    height: 400px;
+    background-color: rgb(245, 245, 245);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-top: -60px;
+    z-index: 1;
+}
+
+
+footer {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 5% 5%;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 2px;
+}
+
+footer p {
+    color: white;
+    font-family: "Shrikhand", "sans-serif";
+    padding: 2% 0 0 5%;
+}
+
+a {
+    color: white;
+    font-family: "Robotomedium", "sans-serif";
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a .fa-solid {
+    margin-right: 10px;
+    width: 15px;
+}
