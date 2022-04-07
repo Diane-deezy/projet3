@@ -61,10 +61,6 @@ p {
     padding-left: 15px;
 }
 
-.image {
-    z-index: 0;
-}
-
 .image img {
     width: 100%;
     overflow: hidden;
@@ -74,14 +70,79 @@ p {
 
 .menu {
     display: flex;
-    height: 400px;
+    flex-direction: column;
+    height: 600px;
     background-color: rgb(245, 245, 245);
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin-top: -60px;
-    z-index: 1;
+    position: relative;
 }
 
+h1 {
+    font-family: "Shrikhand", "sans-serif";
+    font-size: 25px;
+    margin: 7% 15% 3% 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 .fa-regular {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -20px;
+}
+
+h1 .fa-solid {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: transparent;
+}
+
+h1 .heart {
+    min-width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    cursor: pointer;
+}
+
+h1 .fa-regular:active {
+    color: transparent;
+}
+
+h1 .fa-solid:active {
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu button {
+    width: 210px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+    background: linear-gradient(to bottom, #FF79DA 0,8%, #9356DC 80%);
+    border-style: none;
+    border-radius: 50px;
+    color: white;
+    font-family: "Robotomedium", "sans-serif";
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: #d7d7d7 0px 4px 5px 3px ;
+}
+
+.menu button:active {
+    background: linear-gradient(to bottom, #f8abe2 0,8%, #ac8bd5 80%);
+    box-shadow: #a5a5a5 0px 4px 5px 3px ;
+}
 
 footer {
     background-color: rgb(49, 49, 49);
