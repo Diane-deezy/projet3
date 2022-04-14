@@ -14,9 +14,11 @@
     <link rel="canonical" href="#">
     <title>Ohmyfood - Accueil</title>
 </head>
-<body onload="myFunction()">
+<body>
     <!-- Nav Logo -->
-    <div id="loader"></div>
+    <div class="loading">
+        <div id="loader"></div>
+    </div>
     <div id="myDiv" class="animate-bottom">
         <header>
             <div class="logo">
@@ -36,30 +38,30 @@
         <main>
             <div class="fonctionnement">
                 <h1>Fonctionnement</h1>
-                <button type="button">
+                <div class="guide">
                     <div class="number">1</div>
                     <div class="content"><i class="fa-solid fa-mobile-screen-button"></i>
                     Choisissez un restaurant
                     </div>
-                </button>
-                <button type="button">
+                </div>
+                <div class="guide">
                     <div class="number">2</div>
                     <div class="content">
                         <i class="fa-solid fa-list"></i> Composez votre menu
                     </div>
-                </button>
-                <button type="button">
+                </div>
+                <div class="guide">
                     <div class="number">3</div>
                     <div class="content">
                     <i class="fa-solid fa-store"></i> Dégustez au restaurant
                     </div>
-                </button>
+                </div>
             </div>
             <div class="restaurants">
                 <h1>Restaurants</h1>
                 <div class="element">
                     <div class="image">
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du goût">
                     </div>
                 <div class="bottom">
                     <div class="text"> 
@@ -74,7 +76,7 @@
                 </div>
                 <div class="element">
                     <div class="image">
-                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="charonne">
+                        <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="la note enchantée" class="charonne">
                     </div>
                 <div class="bottom">
                     <div class="text"> 
@@ -89,7 +91,7 @@
                 </div>
                 <div class="element">
                     <div class="image">
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="à la française">
                     </div>
                 <div class="bottom">
                     <div class="text"> 
@@ -104,7 +106,7 @@
                 </div>
                 <div class="element">
                     <div class="image">
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délice des sens">
                     </div>
                 <div class="bottom">
                     <div class="text"> 
@@ -129,16 +131,4 @@
             </ul>
         </footer>
     </div>
-    <script>
-        var myVar;
-        
-        function myFunction() {
-          myVar = setTimeout(showPage, 3000);
-        }
-        
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
-        }
-        </script>
 </body>
