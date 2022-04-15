@@ -71,19 +71,20 @@ p {
 .menu {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: fit-content;
     background-color: rgb(245, 245, 245);
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin-top: -60px;
     position: relative;
+    padding-bottom: 25%;
 }
 
 h1 {
     font-family: "Shrikhand", "sans-serif";
     font-size: 25px;
     margin: 7% 15% 3% 5%;
-    width: 90%;
+    width: 93%;
     display: flex;
     justify-content: space-between;
 }
@@ -108,18 +109,137 @@ h1 .heart {
     min-width: 35%;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     cursor: pointer;
+    margin-right: -30px;
 }
 
 h1 .fa-regular:active {
     color: transparent;
 }
 
-h1 .fa-solid:active {
+h1 .fa-regular:hover {
+    color: transparent;
+}
+
+h1 .fa-solid:hover {
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    /* Firefox */
+    -webkit-animation: fadein 1s;
+    /* Safari et Chrome */
+}
+
+h1.fa-solid:active {
+    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    /* Firefox */
+    -webkit-animation: fadein 1s;
+    /* Safari et Chrome */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.entree {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+}
+
+.plat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+}
+
+.dessert {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2% auto;
+}
+
+h2 {
+    font-family: "Robotothin", "sans-serif";
+    font-size: 16px;
+    margin: 1% 4%;
+    color:#606060;
+    width: 93%;
+}
+
+.green-line {
+    width: 11%;
+    background-color: #99E2D0; 
+    height: 3px;
+    margin: 0 4%;
+
+}
+
+.cadre {
+    margin: 2% auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2%;
+    align-content: center;
+    width: 93%;
+    box-shadow: #d7d7d7 0px 3px 4px 2px ;
+}
+
+.titre {
+    font-family: "Robotobold", "sans-serif";
+    font-size: 17px;
+    margin: 1% 2%;
+}
+
+.sous-titre {
+    font-family: "Robotolight", "sans-serif";
+    font-size: 14px;
+    margin: 1% 2%;
+}
+
+.prix {
+    font-family: "Robotobold", "sans-serif";
+    font-size: 15px;
+    margin: -20px 2% 0 2%;
+    text-align: right;
 }
 
 .menu button {
@@ -137,6 +257,7 @@ h1 .fa-solid:active {
     font-size: 16px;
     cursor: pointer;
     box-shadow: #d7d7d7 0px 4px 5px 3px ;
+    margin-top: 10%;
 }
 
 .menu button:active {

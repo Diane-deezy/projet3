@@ -285,6 +285,14 @@ main {
     text-align: center;
 }
 
+.fonctionnement .guide:hover {
+    background-color: #efe8fa;
+}
+
+.fonctionnement .guide:hover .fa-solid {
+    color: #9356DC;
+}
+
 .fonctionnement .guide:active {
     background-color: #efe8fa;
 }
