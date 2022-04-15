@@ -148,7 +148,6 @@ h1.fa-solid:active {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -158,7 +157,6 @@ h1.fa-solid:active {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -168,7 +166,6 @@ h1.fa-solid:active {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -199,16 +196,15 @@ h2 {
     font-family: "Robotothin", "sans-serif";
     font-size: 16px;
     margin: 1% 4%;
-    color:#606060;
+    color: #606060;
     width: 93%;
 }
 
 .green-line {
     width: 11%;
-    background-color: #99E2D0; 
+    background-color: #99E2D0;
     height: 3px;
     margin: 0 4%;
-
 }
 
 .cadre {
@@ -220,7 +216,44 @@ h2 {
     padding: 2%;
     align-content: center;
     width: 93%;
-    box-shadow: #d7d7d7 0px 3px 4px 2px ;
+    box-shadow: #d7d7d7 0px 3px 4px 2px;
+}
+
+.cadre1 {
+    -webkit-animation: 1600ms display-none-transition both;
+    animation: 1600ms display-none-transition both;
+}
+
+.cadre2 {
+    -webkit-animation: 2400ms display-none-transition both;
+    animation: 2400ms display-none-transition both;
+}
+
+.cadre3 {
+    -webkit-animation: 3200ms display-none-transition both;
+    animation: 3200ms display-none-transition both;
+}
+
+@-webkit-keyframes display-none-transition {
+    0% {
+        opacity: 0;
+        margin: 3% auto;
+    }
+    100% {
+        opacity: 1;
+        margin: 2% auto;
+    }
+}
+
+@keyframes display-none-transition {
+    0% {
+        opacity: 0;
+        margin: 3% auto;
+    }
+    100% {
+        opacity: 1;
+        margin: 2% auto;
+    }
 }
 
 .titre {
@@ -249,20 +282,20 @@ h2 {
     align-items: center;
     margin: auto;
     height: 50px;
-    background: linear-gradient(to bottom, #FF79DA 0,8%, #9356DC 80%);
+    background: linear-gradient(to bottom, #FF79DA 0, 8%, #9356DC 80%);
     border-style: none;
     border-radius: 50px;
     color: white;
     font-family: "Robotomedium", "sans-serif";
     font-size: 16px;
     cursor: pointer;
-    box-shadow: #d7d7d7 0px 4px 5px 3px ;
+    box-shadow: #d7d7d7 0px 4px 5px 3px;
     margin-top: 10%;
 }
 
 .menu button:active {
-    background: linear-gradient(to bottom, #f8abe2 0,8%, #ac8bd5 80%);
-    box-shadow: #a5a5a5 0px 4px 5px 3px ;
+    background: linear-gradient(to bottom, #f8abe2 0, 8%, #ac8bd5 80%);
+    box-shadow: #a5a5a5 0px 4px 5px 3px;
 }
 
 footer {
