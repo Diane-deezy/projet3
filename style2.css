@@ -223,7 +223,7 @@ h2 {
 
 .check {
     background-color: #99E2D0;
-    width: 24%;
+    width: 0%;
     position: absolute;
     margin: 0 0 0 69.3%;
     box-shadow: none;
@@ -233,9 +233,15 @@ h2 {
     font-size: 25px;
     border-radius:0 15px 15px 0 ;
     opacity: 0;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
     overflow: hidden;
+}
+.fa-circle-check {
+    line-height: 2.5;
+}
+
+.cadre .check {
+    display: block;
+    right: 3%;
 }
 
 .cadre:hover .check {
@@ -245,7 +251,9 @@ h2 {
 }
 
 @keyframes slide-in {
-    100% { transform: translateX(0%); }
+    100% { 
+        width: 24%;
+    }
 }
 
 @-webkit-keyframes slide-in {
@@ -260,18 +268,22 @@ h2 {
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
+        opacity: 1;
     }
     100% {
         -webkit-transform: rotate(360deg);
+        opacity: 1;
     }
 }
 
 @keyframes spin {
     0% {
         transform: rotate(0deg);
+        opacity: 1;
     }
     100% {
         transform: rotate(360deg);
+        opacity: 1;
     }
 }
 
