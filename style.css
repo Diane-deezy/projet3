@@ -77,13 +77,17 @@
     border: 10px solid whitesmoke;
     border-radius: 50%;
     border-top: 10px solid #9356DC;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    -webkit-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 @-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
     }
     100% {
         -webkit-transform: rotate(360deg);
@@ -93,9 +97,14 @@
 @keyframes spin {
     0% {
         transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
     }
     100% {
         transform: rotate(360deg);
+        opacity: 0;
     }
 }
 
@@ -356,7 +365,7 @@ main {
     font-family: "Robotomedium", "sans-serif";
     font-size: 17px;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin: 10% auto 2% auto;
 }
 
 .element span {
@@ -396,7 +405,7 @@ main {
 }
 
 .text {
-    width: 50%;
+    width: 60%;
 }
 
 .element .fa-regular:hover {
