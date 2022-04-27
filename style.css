@@ -361,11 +361,16 @@ main {
     border-top-left-radius: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .element p {
     font-family: "Robotomedium", "sans-serif";
     font-size: 17px;
     font-weight: 600;
-    margin: 10% auto 2% auto;
+    margin: 8% auto 2% auto;
 }
 
 .element span {
@@ -405,7 +410,7 @@ main {
 }
 
 .text {
-    width: 60%;
+    width: 80%;
 }
 
 .element .fa-regular:hover {
@@ -489,14 +494,14 @@ footer p {
     padding: 2% 0 0 5%;
 }
 
-a {
+ul li a {
     color: white;
     font-family: "Robotomedium", "sans-serif";
     font-size: 14px;
     text-decoration: none;
 }
 
-a .fa-solid {
+ul li a .fa-solid {
     margin-right: 10px;
     width: 15px;
 }

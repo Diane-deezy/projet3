@@ -84,7 +84,15 @@ p {
     width: 100%;
     overflow: hidden;
     object-fit: cover;
+}
+
+.img {
     object-position: 0% 95%;
+}
+
+.note {
+    height: 300px;
+    object-position: 0% 65%;
 }
 
 .menu {
@@ -130,7 +138,8 @@ h1 .heart {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin-right: -30px;
+    margin-right: -35px;
+    line-height: 1.7;
 }
 
 h1 .fa-regular:active {
@@ -276,19 +285,19 @@ h2 {
 
 @-webkit-keyframes shift {
     30% {
-        margin-right: 26%;
+        margin-right: 30%;
     }
     70% {
-        margin-right: 26%;
+        margin-right: 30%;
     }
 }
 
 @keyframes shift {
     30% {
-        margin-right: 26%;
+        margin-right: 30%;
     }
     70% {
-        margin-right: 26%;
+        margin-right: 30%;
     }
 }
 
@@ -313,10 +322,10 @@ h2 {
         height: 65px;
     }
     30% {
-        width: 24%;
+        width: 20%;
     }
     70% {
-        width: 24%;
+        width: 20%;
     }
     99% {
         width: 2%;
@@ -336,10 +345,10 @@ h2 {
         height: 65px;
     }
     30% {
-        width: 24%;
+        width: 20%;
     }
     70% {
-        width: 24%;
+        width: 20%;
     }
     99% {
         width: 2%;
@@ -397,14 +406,27 @@ h2 {
     animation: 2200ms display-none-transition both;
 }
 
+.cadre4 {
+    -webkit-animation: 2400ms display-none-transition both;
+    animation: 2400ms display-none-transition both;
+}
+
 @-webkit-keyframes display-none-transition {
     0% {
         opacity: 0;
-        margin: 3% auto;
+        margin-top: 4%;
+    }
+    25% {
+        margin-top: 3%;
+    }
+    50% {
+        margin-top: 2.5%;
+    }
+    75% {
+        margin-top: 2.3%;
     }
     100% {
         opacity: 1;
-        margin: 2% auto;
     }
 }
 
