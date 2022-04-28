@@ -301,6 +301,90 @@ h2 {
     }
 }
 
+.cadre:hover .titre {
+    opacity: 1;
+    -webkit-animation: wrap 2s;
+    animation: wrap 2s;
+}
+
+.cadre:active .titre {
+    opacity: 1;
+    -webkit-animation: wrap 2s backwards;
+    animation: wrap 2s backwards;
+}
+
+@keyframes wrap {
+    0% {
+        width: 70%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    100% {
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@-webkit-keyframes wrap {
+    0% {
+        width: 50%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    100% {
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.cadre:hover .sous-titre {
+    opacity: 1;
+    -webkit-animation: wrap1 2s;
+    animation: wrap1 2s;
+}
+
+.cadre:active .sous-titre {
+    opacity: 1;
+    -webkit-animation: wrap1 2s backwards;
+    animation: wrap1 2s backwards;
+}
+
+@keyframes wrap1 {
+    0% {
+        width: 50%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    100% {
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+@-webkit-keyframes wrap1 {
+    0% {
+        width: 50%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    100% {
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
 .cadre:hover .check {
     opacity: 1;
     -webkit-animation: slide-in 2s backwards;
