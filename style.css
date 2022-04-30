@@ -505,3 +505,32 @@ ul li a .fa-solid {
     margin-right: 10px;
     width: 15px;
 }
+
+@media (max-width: 991px) {
+    
+    body{
+        max-width: 991px;
+    }
+
+    .element p {
+        margin: 5% auto 2% auto;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    body{
+        display: flex;
+        margin: auto;
+    }
+
+    .element p {
+        margin: 5% auto 2% auto;
+    }
+
+    .explore button {
+        width: 410px;
+        height: 70px;
+        font-size: 23px;
+    }
+}
