@@ -107,7 +107,7 @@ p {
     padding-bottom: 25%;
 }
 
-h1 {
+.restaurant {
     font-family: "Shrikhand", "sans-serif";
     font-size: 25px;
     margin: 7% 15% 3% 5%;
@@ -116,7 +116,7 @@ h1 {
     justify-content: space-between;
 }
 
-h1 .fa-regular {
+.restaurant .fa-regular {
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -124,7 +124,7 @@ h1 .fa-regular {
     margin-right: -20px;
 }
 
-h1 .fa-solid {
+.restaurant .fa-solid {
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@ h1 .fa-solid {
     color: transparent;
 }
 
-h1 .heart {
+.restaurant .heart {
     min-width: 35%;
     display: flex;
     align-items: center;
@@ -142,15 +142,15 @@ h1 .heart {
     line-height: 1.7;
 }
 
-h1 .fa-regular:active {
+.restaurant .fa-regular:active {
     color: transparent;
 }
 
-h1 .fa-regular:hover {
+.restaurant .fa-regular:hover {
     color: transparent;
 }
 
-h1 .fa-solid:hover {
+.restaurant .fa-solid:hover {
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -161,7 +161,7 @@ h1 .fa-solid:hover {
     /* Safari et Chrome */
 }
 
-h1.fa-solid:active {
+.restaurant .fa-solid:active {
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -220,7 +220,7 @@ h1.fa-solid:active {
     margin: 2% auto;
 }
 
-h2 {
+h1 {
     font-family: "Robotothin", "sans-serif";
     font-size: 16px;
     margin: 1% 4%;
@@ -631,19 +631,19 @@ a .fa-solid {
         object-position: 0% 65%;
     }
 
-    h1 {
+    .restaurant {
         font-size: 30px;
     }
 
-    h1 .heart {
+    .restaurant .heart {
         margin-right: -65px;
     }
 
-    h1 .fa-solid {
+    .restaurant .fa-solid {
         font-size: 30px;
     }
 
-    h1 .fa-regular {
+    .restaurant .fa-regular {
         font-size: 30px;
         margin-right: -30px;
     }
@@ -752,7 +752,7 @@ a .fa-solid {
         font-size: 30px;
     }
 
-    h1 .heart {
+    .restaurant .heart {
         min-width: 20%;
     }
 
