@@ -520,7 +520,6 @@ ul li a .fa-solid {
 @media (min-width: 992px) {
     
     body{
-        display: flex;
         margin: auto;
     }
 
