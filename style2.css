@@ -32,7 +32,7 @@
 
 body {
     background-color: white;
-    max-width: 777px;
+    max-width: 767px;
     margin: 0;
 }
 
@@ -616,7 +616,7 @@ a .fa-solid {
     width: 15px;
 }
 
-@media (max-width: 991px) {
+@media screen and (min-width:768px)and (max-width: 991px) {
     
     body{
         max-width: 991px;

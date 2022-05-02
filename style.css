@@ -147,7 +147,7 @@
 
 body {
     background-color: white;
-    max-width: 777px;
+    max-width: 767px;
     margin: 0;
 }
 
@@ -203,6 +203,10 @@ h2 {
     font-size: 18px;
     margin: 0 5% 0 5%;
     text-align: center;
+}
+
+button a {
+    color: white;
 }
 
 .explore button {
@@ -364,6 +368,7 @@ main {
 a {
     text-decoration: none;
     color: black;
+    width: 100%;
 }
 
 .element p {
@@ -430,6 +435,7 @@ a {
     /* Firefox */
     -webkit-animation: fadein 1s;
     /* Safari et Chrome */
+    animation-fill-mode: forwards;
 }
 
 .element .fa-solid:active {
@@ -506,7 +512,7 @@ ul li a .fa-solid {
     width: 15px;
 }
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width:768px) {
     
     body{
         max-width: 991px;
