@@ -443,12 +443,12 @@ h1 {
     }
 }
 
-.check:hover .fa-circle-check {
+.cadre:hover .check .fa-circle-check {
     -webkit-animation: spin 600ms linear;
     animation: spin 600ms linear;
 }
 
-.check:active .fa-circle-check {
+.cadre:active .check .fa-circle-check {
     -webkit-animation: spin 600ms linear;
     animation: spin 600ms linear;
 }
@@ -458,7 +458,7 @@ h1 {
         -webkit-transform: rotate(180deg);
         opacity: 1;
     }
-    50% {
+    100% {
         -webkit-transform: rotate(360deg);
         opacity: 1;
     }

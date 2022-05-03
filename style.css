@@ -205,8 +205,9 @@ h2 {
     text-align: center;
 }
 
-button a {
-    color: white;
+.explore a {
+    display: flex;
+    justify-content: center;
 }
 
 .explore button {
@@ -375,43 +376,37 @@ a {
     font-family: "Robotomedium", "sans-serif";
     font-size: 17px;
     font-weight: 600;
-    margin: 8% auto 2% auto;
+    margin-bottom: 1%;
 }
 
 .element span {
     font-family: "Robotolight", "sans-serif";
-    font-size: 17px;
+    font-size: 16px;
     padding-left: 15px;
 }
 
 .element .fa-regular {
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: -20px;
+    position: absolute;
+    right: 5%;
 }
 
 .element .fa-solid {
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    position: absolute;
+    right: 5%;
     color: transparent;
 }
 
 .element .heart {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-right: 5%;
-    margin-top: 5%;
-    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 6%;
 }
 
 .bottom {
     display: flex;
+    position: relative;
 }
 
 .text {
@@ -516,10 +511,6 @@ ul li a .fa-solid {
     
     body{
         max-width: 991px;
-    }
-
-    .element p {
-        margin: 5% auto 2% auto;
     }
 }
 
