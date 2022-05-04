@@ -205,9 +205,10 @@ h2 {
     text-align: center;
 }
 
-.explore a {
+.explore form {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 .explore button {
@@ -385,6 +386,13 @@ a {
     padding-left: 15px;
 }
 
+.element-heart {
+    position: relative;
+    width: 30%;
+    left: 64%;
+    top: -11%;
+}
+
 .element .fa-regular {
     font-size: 20px;
     position: absolute;
@@ -400,8 +408,8 @@ a {
 
 .element .heart {
     position: absolute;
-    top: 50%;
-    right: 6%;
+    right: 10%;
+    cursor: pointer;
 }
 
 .bottom {
@@ -512,16 +520,17 @@ ul li a .fa-solid {
     body{
         max-width: 991px;
     }
+
+    .element .heart {
+        top: 48.5%;
+    }
+
 }
 
 @media (min-width: 992px) {
     
     body{
         margin: auto;
-    }
-
-    .element p {
-        margin: 5% auto 2% auto;
     }
 
     .explore button {
